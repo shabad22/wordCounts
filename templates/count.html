@@ -1,0 +1,17 @@
+<body bgcolor="yellow" text="blue">
+<h1>Result</h1>
+<br>
+<h2>Text entered :</h2>
+<br>
+<h3>{{ text }}</h3>
+<br>
+<h2>Total no. of words entered = {{ words }}</h2>
+<br><br>
+<h3>
+{% for word,value in worddict %}
+{{ word }} = {{ value}}<br>
+
+{% endfor %}
+</h3>  
+<a href=" {% url 'home' %} ">home</a>
+</body>

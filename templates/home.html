@@ -1,0 +1,17 @@
+<body bgcolor="yellow" text="blue">
+<h1>WordCount</h1>
+<h2>Welcome to 'The WordCount Website'</h2>
+<h2>To make the text area bigger,drag the button on the bottom right of the text area</h2>
+<h2>Please don't enter space in '.' or in ','</h2>
+<br>
+<form action="count">
+    <textarea name='fulltext'cols=30 rows=7></textarea>
+    <br>
+    <input type="submit" value="Count!"/> 
+    <input type="reset" value="Clear">
+</form>
+<br>
+<a href="{% url 'about' %}">About the Editor</a><br>
+<a href=" {% url 'login' %} ">Sign In</a>
+
+</body>

@@ -1,0 +1,66 @@
+<body bgcolor="yellow" text="blue">
+<h1>Sign In</h1>
+<form>
+    <table>
+        <tr>
+            <td>
+                Name :
+            </td>
+            <td>
+                <input type="text" placeholder="Name" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password :
+            </td>
+            <td>
+                <input type="Password" placeholder="Password" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Operating system :
+            </td>
+            <td>
+                <input type="radio" name="">Windows
+                <input type="radio" name="">IOS (Mac)
+                <input type="radio" name="">Others
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Internet :
+            </td>
+            <td>
+                    <input type="checkbox" name="">Airtel
+                    <input type="checkbox" name="">Jio
+                    <input type="checkbox" name="">Vodafone
+                    <input type="checkbox" name="">Idea
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email :
+            </td>
+            <td>
+                <input type="mail" placeholder="Email Id" name="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone :
+            </td>
+            <td>
+                <input type="Phone" placeholder="Phone no." name="">
+            </td>
+        </tr>
+    </table>
+</form>
+<input type="submit"value="Submit">
+<br>
+<br>
+<a href="{% url 'home' %}">Home</a><br>
+<a href="{% url 'about' %}">About the Editor</a>
+
+</body>
